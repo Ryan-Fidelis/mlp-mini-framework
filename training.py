@@ -46,8 +46,8 @@ train = mf.Simple_Training_Loop(n_hidden_layers=2, n_inputs=6, epochs=500, eta=0
 train.hidden_layer_neuron_set(0, 20)
 train.hidden_layer_neuron_set(1, 12)
 
-print("Iniciando o Treinamento...")
+print("Training...")
 train.loop(x_train_np, y_train_np)
 
-print("Iniciando a Validação...")
+print("Testing...")
 train.test(x_test_np, y_test_np)
