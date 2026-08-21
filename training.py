@@ -4,8 +4,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('cumulative.csv', sep=',')
-colunas_usadas = ['koi_duration', 'koi_depth', 'koi_steff', 'koi_model_snr', 'koi_score', 'koi_prad', 'koi_period']
-df.dropna(subset=colunas_usadas, inplace=True)
+columns_used = ['koi_duration', 'koi_depth', 'koi_steff', 'koi_model_snr', 'koi_score', 'koi_prad', 'koi_period']
+df.dropna(subset=columns_used, inplace=True)
 df.reset_index(drop=True, inplace=True)
 
 def z(x):
